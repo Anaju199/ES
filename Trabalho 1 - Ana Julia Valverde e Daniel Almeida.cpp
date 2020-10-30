@@ -64,9 +64,7 @@ int main(){
     list<registro> lista1;
 	registro aux;
 
-    cout<<"Digite o nome do arquivo de texto com .txt"<<endl;
-    cin>>nome;
-//    nome="Teste.txt";
+    nome="Teste.txt";
         //Ler arquivo
          ifstream ler(nome);
          int i=0;
