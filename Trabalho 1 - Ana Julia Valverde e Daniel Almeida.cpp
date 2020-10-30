@@ -15,17 +15,15 @@
 
 #define Max 500
 
-//Alunos Ana Júlia Valverde e Daniel Almeida
-
 using namespace std;
 
 struct registro {
   int p; //prioridade do processo
   int c; //o instante de chegada do processo
-  int s; //o tempo de serviço do processo
+  int s; //o tempo de serviÃ§o do processo
   int esp=-1; //variavel para somar o tempo de espera
   int resp=-1; //somar o tempo resposta
-  int t; //tempo de serviço
+  int t; //tempo de serviÃ§o
   int com;
   int fim;
 };
@@ -35,8 +33,8 @@ struct resultado {
   float respo; //retorna resposta
 };
 
+
 void salvarArquivo(float matrizSalv[4][2]);
-void lerArquivo(string nome, string vetor[Max]);
 float funcaoFIFO(list<registro> lista);
 float funcaoSRT(list<registro> lista);
 resultado funcaoPRIO(list<registro> lista);
@@ -331,16 +329,16 @@ void salvarArquivo(float matrizSalv[4][2]){
         cout<<"Resposta salva em Resultado.txt"<<endl;
 }
 
-bool comparaC(registro a, registro b){ //Função ordena pela ordem de chegada
+bool comparaC(registro a, registro b){ //FunÃ§Ã£o ordena pela ordem de chegada
   return a.c < b.c ;
 }
 
 
-bool comparaS(registro a, registro b){ //Função ordena pelo tempo de serviço
+bool comparaS(registro a, registro b){ //FunÃ§Ã£o ordena pelo tempo de serviÃ§o
   return a.s < b.s;
 }
 
-bool comparaP(registro a, registro b){ //Função ordena por prioridade
+bool comparaP(registro a, registro b){ //FunÃ§Ã£o ordena por prioridade
   return a.p < b.p;
 }
 
