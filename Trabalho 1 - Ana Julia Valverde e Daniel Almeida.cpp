@@ -52,7 +52,7 @@ int tamL=0;
 int main(){
 
     setlocale(LC_ALL,"portuguese");
-    string vetPalavras[Max], nome, vetLinhas[Max], vetSalvar[Max], f;
+    string vetPalavras[Max], nome, vetLinhas[Max], vetSalvar[Max];
 
     int tamP, n=0;
     float total=0;
@@ -64,9 +64,7 @@ int main(){
     list<registro> lista1;
 	registro aux;
 
-    cout<<"Digite o nome do arquivo de texto com .txt"<<endl;
-    cin>>nome;
-//    nome="Teste.txt";
+    nome="Teste.txt";
         //Ler arquivo
          ifstream ler(nome);
          int i=0;
