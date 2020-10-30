@@ -52,7 +52,7 @@ int tamL=0;
 int main(){
 
     setlocale(LC_ALL,"portuguese");
-    string vetPalavras[Max], nome, vetLinhas[Max], vetSalvar[Max], f;
+    string vetPalavras[Max], nome, vetLinhas[Max], vetSalvar[Max];
 
     int tamP, n=0;
     float total=0;
